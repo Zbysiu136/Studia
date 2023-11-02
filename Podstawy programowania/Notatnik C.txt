@@ -1,0 +1,83 @@
+#include <stdio.h> - CO TO (instrukcja preprocesowa)
+main - trzeba wykonać pierwszą funckej
+scanf("%d", &liczba2); %d to przykład specyfikatora formatu odpowiadający wartości typu int
+
+rzutowanie - konwersja między typami danych
+Całkowite
+int - 16bit
+long - 32bity
+long long - 64bity
+
+unsigned int - bez znaku zwiększa maksymalną wartość
+char - znak
+boolean - logiczne
+
+zmienno przecinkowe
+float - 6 cyfr po przecinku
+double - co najmniej 10
+long double 
+
+sizeof - zwraca rozmiar typow i zmiennych w bajtach
+artemtyka zwraca - taki typ jaki został użyty bądz najpojemniejszy
+
+specyfikator
+%c Pojedynczy znak
+%d liczba całkowita ze znakiem
+%f liczba zmienno przecinkowa
+%g Równoważny %e, gdy wykładnik mniejszy niż −4 lub większy/równy dokładności, inaczej %f
+%E Jak wyżej, tyle że z E
+%o Ósemkowa liczba całkowita bez znaku
+%p Dana wejściowa ma być wskaźnikiem (adres)
+%s Łańcuch znakowy
+%u całkowita bez znaku
+%x Szesnastkowa liczba całkowita, cyfry szesnastkowe małą literą (0f)
+%X Szesnastkowa liczba całkowita, cyfry szesnastkowe dużą literą (0F)
+%% Wyświetla znak procentu
+%e Liczba zmiennoprzecinkowa w notacji z literą e
+%E Liczba zmiennoprzecinkowa w notacji z literą E
+
+Modyfikator
+.liczba - dokładność po przecinku np .3f
+h - W połączeniu ze specyfikatorem całkowitym oznacza wartość short int lub unsigned short int Przykłady: %hu”, ”%hx”
+j - używany ze specyfikatorem konwersji liczb całkowitych oznacza wartość typu intmax_t lub uintmax_h (typy zdefiniowano w stdint.h) Przykład: ”%jd”
+l - oznacza long int unsigned long int %ld
+ll - long long int dla inta tylko %lld
+L - long double dla flout %lf
+z - wartość size_t typ zwracający wartość sizeof dla inta %zd
+
+znaczniki
+- Wyrównuje do lewej krawędzi pola (%-20s)
++ Wyświetla ze znakiem + lub – (%+6.2f).
+Odstęp Wyświetla z odstępem na początku (% 6.2f)
+
+• Jeśli używasz scanf() do wczytania wartości do zmiennej należącej do któregoś z typów
+podstawowych, przed nazwą zmiennej dodaj &.
+• Jeśli używasz scanf() do wczytania łańcucha do tablicy znaków, nie dodawaj
+przedrostka &.
+
+Sekwencje sterujące (np nowa linia)
+Sekwencja Znaczenie
+\a alarm (sygnał akustyczny terminala) ANSI C
+\b Znak cofania
+\f Wysuw strony (form feed)
+\r Powrót karetki (kursora)
+\n Nowa linia
+\t Tabulator poziomy
+\v Tabulator pionowy
+\ \ Backslash
+\ ‘ apostrof
+\ ‘’ Cudzysłów (ANSI C)
+
+
+inkrementacja - zwiekszenie wartości o jeden
+dekrementacja - zmiejszenie warotscci o jeden
+
+operator warunkowy ?
+wyrażenie1 ? wyrażenie2 : wyrażenie3
+tz. if wyrazenie1 = true{
+    return wyrazenie2
+}
+else {
+    return wyrazenie3
+}
+
